@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-right: #BEC1BB solid 1px;
+
+
+
+}
+
+.usuario {
+  display: flex;
+
+
+}
+
+
+.usuario1 {
+  height: 9.09vh;
+  display: flex;
+  align-items: center;
+  border-bottom: #CDC3E6 solid 1px;
+
+
+
+}
+
+.redondearTiny {
+  border-radius: 50%;
+  height: 50%;
+  margin-left: 10%;
+  padding: 2%;
+}
+.redondearNormal {
+  border-radius: 50%;
+  height: 65%;
+  margin-left: 10%;
+  padding: 2%;
+}
+
+.contenido {
+  background-color: #E8EBE4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1B1F21;
+  
+}
+
+.imagenmano {
+  height: 40%;
+  border-radius: 1rem;
+
+}
+
+h1 {
+  padding: 1%;
+  letter-spacing: 2px;
+}
+
+.h4size {
+  text-align: center;
+  line-height: 1.5;
+  width: 35%;
+}
+
+h4 {
+  color: #1B1F21;
+}
+
+h6 {
+  color: #BEC1BB;
+}
+
+.botoncitos {
+  display: flex;
+  padding-left: 20%;
+  color: #BEC1BB;
+  justify-content: space-around;
+}
+
+.botoncitos i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.boton {
+  height: 18.18vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #CDC3E6 solid 1px;
+    button {
+    border: none;
+    color:#fff;
+    background-color: #A491D2;
+    cursor: pointer;
+    padding: 5% 22.666% 5% 22.666%;
+  }
+
+}
+
+
+
+.boton button:hover {
+  background-color: #CDC3E6;
+}
+
+.boton button:active {
+  background-color: #BEC1BB;
+}
+
