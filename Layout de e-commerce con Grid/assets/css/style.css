@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+    background-color: beige;
+
+   
+    
+}
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.gridContainer {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                'aside prod prod prod'
+               'aside prod prod prod'
+                ' pie pie pie pie';
+    grid-template-columns: 10% 1fr 1fr 30%;
+    grid-template-rows:15% 1fr  15%;
+    
+   
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+   
+
+}
+
+ul{
+    padding-bottom: 10px;
+}
+   
+   
+
+
+.navBar {
+    grid-area: navbar;
+    display: flex;
+    justify-content:center;
+    
+    height: 100%;
+    border-radius: 1em;
+    .logoOpel {
+        height: 100%;
+    }
+    .n1 {
+        background-color: black;
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    
+   
+    /* grid-column: 1 / 5;
+    grid-row: 4 / 5; */
+}
+.cajitaTexto {
+    height: 80%;
+    padding: 5em;
+}
+.opelH1 {
+   
+    font-size: 300%;
+    color: white;
+    
+}
+
+.opelH2 {
+   
+    font-size:larger;
+    color: white;
+    
+}
+.asideBar {
+    grid-area: aside;
+    background-image:url(/assets/img/Opel-Logo-historytransparente.png);
+   
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+   
+   
+   height: 100%;
+   .modelos h2 {
+    padding-bottom: 30px;
+
+   }
+   
+    
+   /*  grid-row: 2 / 4;
+    grid-column: 1 / 2; */
+}
+
+.productos {
+    grid-area: prod;
+  
+    text-align: center;
+    height: 100%;
+
+}
+
+.piePagina {
+    grid-area: pie;
+    display:flex;
+    background-image:url(/assets/img/Opel-Logo-historytransparente.png);
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    height: 8vh; 
+    border-top: 2px solid rgb(166, 166, 166);
+   
+    /* grid-column:1 / 5;
+    grid-row: 1 / 2; */
+}
+.grillaProductos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 5px;
+    gap: 2%;
+    height: 100%;
+    img {
+    
+        width: 50%;
+        padding: 6px;
+        border-radius: 10px;
+
+  
+  }
+    
+}
+.p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rodeaimagen {
+    border-radius:5px;
+    padding: 5px;
+    background-color: rgb(166, 166, 166);
+    width: 50%;
+    color: white;
+}
+
+.rodeaimagen2 {
+    
+    padding: 5px;
+    background-color: rgb(166, 166, 166);
+    width: 50%;
+    color: white;
+}
+
+.textofoot { 
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.nuevologo {
+    padding-left: 30px;
+    
+    height: 6.66vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10% 10px 10%;
+    display: inline-block;
+}
+
+a:hover { 
+    background-color:black;
+    color: white; 
+    text-decoration: none; 
+    width: 100%;
+  }
+
+
+
