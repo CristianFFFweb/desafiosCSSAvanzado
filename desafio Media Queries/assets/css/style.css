@@ -1,0 +1,357 @@
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-areas: "nav"
+        "buscar"
+        "img"
+        "foot";
+    row-gap: 15px;
+
+    grid-template-rows: 10% 10% 1fr 10%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar {
+    grid-area: nav;
+    display: flex;
+    border-radius: .5em .5em 0 0;
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 20px;
+
+    .areaMenu {
+        visibility: hidden;
+    }
+
+    .fa-solid.fa-bars {
+        font-size: 1.5em;
+    }
+
+
+    .logotexto {
+        display: flex;
+
+        .logoOpel {
+            height: 9vh;
+
+
+        }
+
+    }
+
+}
+
+.filtroBuscar {
+    grid-area: buscar;
+    background-color: #ccc;
+    color: rgb(57, 60, 63);
+    padding: 20px;
+
+    .ordenar-por {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ordenar-por label {
+        margin-right: 10px;
+        padding: .5em;
+    }
+
+    .ordenar-por select {
+        appearance: none;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+}
+
+.imagenes {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+
+    color: rgb(39, 93, 139);
+    padding: 10px;
+    height: 90%;
+
+    .tamanogrande {
+        display: none;
+    }
+
+    .maincard {
+        padding: 60px 15px 30px 15px;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: .75em .75em .75em .75em;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+        img {
+            height: 50vh;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color: black;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+            }
+        }
+
+        .scroll {
+            display: flex;
+
+            p {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+.piedepagina {
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 10px;
+
+    i {
+        font-size: 1.5em;
+    }
+
+}
+
+@media(width>=576px) {
+
+    .gridArea {
+        display: grid;
+        grid-template-areas: "nav buscar"
+            "nav img"
+            "foot img";
+
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-columns: 20% 1fr;
+
+
+        height: 100vh;
+
+    }
+
+    .piedepagina {
+        grid-area: foot;
+        display: flex;
+        flex-direction: column;
+
+        background-color: #ccc;
+        color: black;
+        padding: 10px;
+
+        i {
+            font-size: 1.5em;
+        }
+    }
+
+    .navbar {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        border-radius: .5em 0 0 0;
+
+
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+
+        height: 100vh;
+
+        .fa-solid.fa-bars {
+            display: none;
+        }
+
+
+        .areaMenu {
+            visibility: visible;
+        }
+
+        .fa-solid.fa-bars {
+            font-size: 1.5em;
+        }
+
+        ul li {
+            padding-bottom: 20px;
+            padding-right: 50px;
+            list-style-type: none;
+        }
+
+
+        .logotexto {
+            display: flex;
+
+            .logoOpel {
+                height: 9vh;
+
+
+            }
+
+        }
+
+    }
+
+    .filtroBuscar {
+        grid-area: buscar;
+        margin-top: -7px;
+        background-color: #ccc;
+        color: rgb(57, 60, 63);
+
+        .ordenar-por {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .ordenar-por label {
+            margin-right: 10px;
+            padding: .5em;
+        }
+
+        .ordenar-por select {
+            appearance: none;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+    }
+
+    .imagenes {
+        grid-area: img;
+        display: flex;
+        color: rgb(39, 93, 139);
+
+        .maincard {
+
+            display: none;
+
+        }
+
+        .tamanogrande {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 50% 50%;
+            width: 100%;
+            height: 100%;
+            gap: 25px;
+
+            .imagengrande {
+                height: 60%;
+                padding: 60px 15px 30px 15px;
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: .75em .75em .75em .75em;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        
+                img {
+                    height: 30vh;
+                }
+                button {
+                    padding: 10px;
+                    border: none;
+                    color: white;
+                    background-color: black;
+        
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px;
+                    }
+                }
+        }
+
+
+
+    }
+
+    
+    }}
